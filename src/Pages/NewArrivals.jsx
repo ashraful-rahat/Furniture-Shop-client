@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import Image4 from "/Product/bookshelf.jpg";
 import Image2 from "/Product/diningset2.jpg";
@@ -23,7 +23,11 @@ const NewArrivals = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl text-orange-600 font-bold text-center mb-8 ">New Arrivals</h2>
+        <h2 className="text-4xl text-orange-600 font-bold text-center mb-4 font-mono ">New Arrivals</h2>
+        <p className="text-xl text-gray-700  text-center mb-8">
+                Upgrade your dining experience with our finely crafted tables, chairs, and decor accents.
+              </p>
+  
         <div className="relative">
           {/* Scroll Left Button */}
           <button
@@ -76,6 +80,13 @@ const NewArrivals = () => {
           </button>
         </div>
       </div>
+         <div className="flex items-center justify-center">
+         <NavLink to="/">
+              <button className="px-6 py-3 mt-8 text-white font-semibold text-xl bg-orange-400 hover:bg-orange-500 transition rounded-full">
+                  Explore Now
+               </button>
+           </NavLink>
+         </div>
     </section>
   );
 };
