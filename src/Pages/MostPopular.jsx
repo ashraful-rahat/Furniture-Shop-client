@@ -47,11 +47,12 @@ const MostPopular = () => {
             {/* Right Side - Wishlist & Cart Buttons */}
             <div className="absolute top-5 right-5 flex flex-col space-y-2 ">
               <button className=" p-2  bg-white text-black backdrop-blur-lg ">
-                <FaHeart size={16} />
+                <FaHeart size={18} />
               </button>
-              <button className=" p-2 bg-white text-black ">
-                <FaShoppingCart size={16} />
-              </button>
+              <button className="p-2 bg-white text-black hover:bg-orange-500">
+  <FaShoppingCart size={18} />
+</button>
+
             </div>
 
             {/* Image Caption */}

@@ -1,4 +1,5 @@
 import Carousel from "../Slider/Carousel";
+import HotProducts from "./HotProducts";
 import MostPopular from "./MostPopular";
 import NewArrivals from "./NewArrivals";
 
@@ -12,6 +13,10 @@ const Home = () => {
     <div>
     <NewArrivals></NewArrivals>
     </div>
+
+      <div>
+      <HotProducts></HotProducts>
+      </div>  
 
     <div>
       <MostPopular></MostPopular>

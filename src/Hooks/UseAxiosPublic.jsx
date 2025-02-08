@@ -1,12 +1,11 @@
-import axios from "axios";
-
-const axiosPublic = axios.create({
-    baseURL: 'http://localhost:5000',
-    
-});
+import axios from 'axios';
 
 const UseAxiosPublic = () => {
-    return axiosPublic
+  const axiosInstance = axios.create({
+    baseURL: 'http://localhost:5000', // Ensure this matches your backend server URL
+  });
+
+  return axiosInstance;
 };
 
 export default UseAxiosPublic;

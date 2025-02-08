@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import Image4 from "/Product/bookshelf.jpg";
 import Image2 from "/Product/diningset2.jpg";
 import Image5 from "/Product/MinimalistDesk.jpg";
+import Image6 from "/Product/most7.jpg";
 import Image1 from "/Product/sofa.jpg";
 import Image3 from "/Product/wardrobe1.jpg";
 
@@ -49,6 +50,7 @@ const NewArrivals = () => {
               { id: 3, img: Image3, title: "Cozy Armchair", price: "$349" },
               { id: 4, img: Image4, title: "Stylish Bookshelf", price: "$249" },
               { id: 5, img: Image5, title: "Minimalist Desk", price: "$399" },
+              { id: 6, img: Image6, title: "Minimalist Desk", price: "$499" },
             ].map((product) => (
               <div key={product.id} className="flex-none w-64">
                 <Link to={`/product/${product.id}`} className="group">
@@ -69,6 +71,7 @@ const NewArrivals = () => {
               </div>
             ))}
           </div>
+          
 
           {/* Scroll Right Button */}
           <button
