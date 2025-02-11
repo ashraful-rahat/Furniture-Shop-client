@@ -46,38 +46,38 @@ const Furniture = () => {
         {furniture.map((item) => (
           <div
             key={item._id}
-            className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 hover:scale-105"
+            className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 hover:scale-105 border border-gray-200"
           >
             <img
               src={item.image}
               alt={item.name}
-              className="w-full h-48 object-cover transform hover:scale-110 transition-transform duration-300"
+              className="w-full h-48 object-cover transform hover:scale-100 transition-transform duration-300 rounded-t-lg"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2 hover:text-blue-600 transition-colors duration-300 cursor-pointer">
+              <h3 className="text-lg font-semibold mb-2 hover:text-blue-600 transition-colors duration-300 cursor-pointer">
                 {item.name}
               </h3>
-              <p className="text-gray-600 mb-2">
+              <p className="text-gray-600 text-sm mb-2">
                 <span className="font-medium">Size:</span> {item.size}
               </p>
-              <p className="text-gray-600 mb-2">
+              <p className="text-gray-600 text-sm mb-2">
                 <span className="font-medium">Price:</span> {item.price}
               </p>
-              <p className="text-gray-600 mb-2">
+              <p className="text-gray-600 text-sm mb-2">
                 <span className="font-medium">Description:</span> {item.description}
               </p>
-              <p className="text-gray-600 mb-2">
+              <p className="text-gray-600 text-sm mb-2">
                 <span className="font-medium">Material:</span> {item.material}
               </p>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm">
                 <span className="font-medium">Weight Limit:</span> {item.weight_limit}
               </p>
               <div className="flex gap-2 mt-4">
-                <button className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
-                  <FaShoppingCart /> Add to Cart
+                <button className="flex items-center gap-1 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-1.5 rounded-md text-sm hover:from-blue-600 hover:to-blue-800 transition duration-300 shadow-md">
+                  <FaShoppingCart /> Add
                 </button>
-                <button className="flex items-center gap-2 bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-300">
-                  <FaEye /> View Details
+                <button className="flex items-center gap-1 bg-gradient-to-r from-gray-500 to-gray-700 text-white px-6 py-1.5 rounded-md text-sm hover:from-gray-600 hover:to-gray-800 transition duration-300 shadow-md">
+                  <FaEye /> View
                 </button>
               </div>
             </div>
