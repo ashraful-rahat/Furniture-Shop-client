@@ -1,28 +1,25 @@
 import { useEffect, useState } from "react";
 import { FaEye, FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import UseAxiosPublic from "../Hooks/UseAxiosPublic";
 
 const Furniture = () => {
   const [furniture, setFurniture] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+
 
   const axios = UseAxiosPublic();
 
   useEffect(() => {
     const fetchFurniture = async () => {
-      try {
-        console.log("Fetching furniture data from API...");
+      
+        
         const response = await axios.get("/furniture");
-        console.log("Furniture data received:", response.data);
+
         setFurniture(response.data);
         setLoading(false);
-      } catch (err) {
-        console.error("Error fetching furniture:", err.response ? err.response.data : err.message);
-        setError("Failed to fetch furniture.");
-        setLoading(false);
-      }
-    };
+      } 
+    
 
     fetchFurniture();
   }, [axios]);
@@ -35,9 +32,7 @@ const Furniture = () => {
     );
   }
 
-  if (error) {
-    return <div className="flex justify-center items-center h-screen text-red-500">{error}</div>;
-  }
+ 
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -76,9 +71,11 @@ const Furniture = () => {
                 <button className="flex items-center gap-1 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-1.5 rounded-md text-sm hover:from-blue-600 hover:to-blue-800 transition duration-300 shadow-md">
                   <FaShoppingCart /> Add
                 </button>
-                <button className="flex items-center gap-1 bg-gradient-to-r from-gray-500 to-gray-700 text-white px-6 py-1.5 rounded-md text-sm hover:from-gray-600 hover:to-gray-800 transition duration-300 shadow-md">
-                  <FaEye /> View
-                </button>
+                <Link to={`/furniture/${item._id}`}>
+  <button className="flex items-center gap-1 bg-gradient-to-r from-gray-500 to-gray-700 text-white px-6 py-1.5 rounded-md text-sm hover:from-gray-600 hover:to-gray-800 transition duration-300 shadow-md">
+    <FaEye /> View
+  </button>
+</Link>
               </div>
             </div>
           </div>
