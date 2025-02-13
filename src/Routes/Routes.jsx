@@ -3,6 +3,7 @@ import MainLayOut from "../Layout/MainLayOut";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import Furniture from "../Pages/Furniture";
+import FurnitureDetails from "../Pages/FurnitureDetails";
 import Home from "../Pages/Home";
 
 const router =createBrowserRouter([
@@ -27,6 +28,10 @@ const router =createBrowserRouter([
               {
                 path: "/contact",
                 element: <Contact></Contact>,
+              },
+              {
+                path: "/furniture/:id",
+                element:<FurnitureDetails></FurnitureDetails>,
               },
         ]
     }
