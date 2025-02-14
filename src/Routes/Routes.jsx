@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayOut from "../Layout/MainLayOut";
 import About from "../Pages/About";
+import Cart from "../Pages/Cart";
 import Contact from "../Pages/Contact";
 import Furniture from "../Pages/Furniture";
 import FurnitureDetails from "../Pages/FurnitureDetails";
@@ -28,6 +29,10 @@ const router =createBrowserRouter([
               {
                 path: "/contact",
                 element: <Contact></Contact>,
+              },
+              {
+                path: "/cart",
+                element: <Cart></Cart>,
               },
               {
                 path: "/furniture/:id",

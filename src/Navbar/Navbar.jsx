@@ -1,7 +1,7 @@
 
 import { FaHeart, FaShoppingBag, FaShoppingCart } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -34,9 +34,9 @@ const Navbar = () => {
           <button className="hover:text-gray-200 transition-colors" aria-label="Wishlist">
             <FaHeart />
           </button>
-          <button className="hover:text-gray-200 transition-colors" aria-label="Shopping Cart">
+          <Link to='/cart' className="hover:text-gray-200 transition-colors" aria-label="Shopping Cart">
             <FaShoppingCart  size={20}/>
-          </button>
+          </Link>
         </div>
       </div>
 
