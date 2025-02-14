@@ -1,8 +1,9 @@
 import Carousel from "../Slider/Carousel";
+
 import HotProducts from "./HotProducts";
 import MostPopular from "./MostPopular";
 import NewArrivals from "./NewArrivals";
-import Practice from "./Practice";
+// import Practice from "./Practice";
 
 
 const Home = () => {
@@ -24,9 +25,9 @@ const Home = () => {
     </div>
 
 
- <div className="mt-45">
+ {/* <div className="mt-45">
  <Practice></Practice>
- </div>
+ </div> */}
 
 
     </div>
