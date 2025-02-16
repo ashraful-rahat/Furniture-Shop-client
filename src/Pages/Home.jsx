@@ -3,6 +3,7 @@ import Carousel from "../Slider/Carousel";
 import HotProducts from "./HotProducts";
 import MostPopular from "./MostPopular";
 import NewArrivals from "./NewArrivals";
+import OurBestDesign from "./OurBestDesign";
 // import Practice from "./Practice";
 
 
@@ -29,7 +30,11 @@ const Home = () => {
  <Practice></Practice>
  </div> */}
 
+ <div>
+  <OurBestDesign></OurBestDesign>
+ </div>
 
+ 
     </div>
   )
 }
