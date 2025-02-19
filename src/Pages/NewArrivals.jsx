@@ -28,7 +28,9 @@ const NewArrivals = () => {
         <p className="text-xl text-gray-700  text-center mb-8">
                 Upgrade your dining experience with our finely crafted tables, chairs, and decor accents.
               </p>
-  
+              <p className="text-xl text-gray-700  text-center mb-8">
+                Upgrade your dining experience with our finely crafted tables, chairs, and decor accents.
+              </p>
         <div className="relative">
           {/* Scroll Left Button */}
           <button

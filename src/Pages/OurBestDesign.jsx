@@ -13,7 +13,7 @@ const OurBestDesign = () => {
           {/* Product 1 */}
           <div className="relative group">
             <div className="h-96 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${Image1})` }}>
-              {/* Content that appears on hover */}
+              {/* Content Wrapper */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-lg flex justify-center items-end p-8"
                 initial={{ opacity: 0 }}
@@ -21,35 +21,46 @@ const OurBestDesign = () => {
                 transition={{ opacity: { duration: 0.5 } }}
               >
                 <div className="text-center text-white">
-                  <motion.h3 
+                  {/* Title Animation */}
+                  <motion.h3
                     className="text-3xl font-semibold mb-2"
-                    initial={{ y: 50, opacity: 0 }}
-                    whileHover={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5 }}
+                    initial={{ y: 30, opacity: 0 }}
+                    whileHover={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.1 }}
+                    exit={{ opacity: 0, y: 30 }}
                   >
                     Modern Chair
                   </motion.h3>
-                  <motion.p 
+
+                  {/* Description Animation */}
+                  <motion.p
                     className="text-lg mb-4"
-                    initial={{ y: 50, opacity: 0 }}
-                    whileHover={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.1 }}
+                    initial={{ y: 30, opacity: 0 }}
+                    whileHover={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    exit={{ opacity: 0, y: 30 }}
                   >
                     Elegant and comfortable modern chair with ergonomic design.
                   </motion.p>
-                  <motion.p 
+
+                  {/* Price Animation */}
+                  <motion.p
                     className="text-xl font-semibold mb-4"
-                    initial={{ y: 50, opacity: 0 }}
-                    whileHover={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
+                    initial={{ y: 30, opacity: 0 }}
+                    whileHover={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                    exit={{ opacity: 0, y: 30 }}
                   >
                     $199.99
                   </motion.p>
-                  <motion.button 
+
+                  {/* Button Animation */}
+                  <motion.button
                     className="bg-blue-600 px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                    exit={{ opacity: 0 }}
                   >
                     Add to Cart
                   </motion.button>
@@ -61,7 +72,7 @@ const OurBestDesign = () => {
           {/* Product 2 */}
           <div className="relative group">
             <div className="h-96 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${Image2})` }}>
-              {/* Content that appears on hover */}
+              {/* Content Wrapper */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-lg flex justify-center items-end p-8"
                 initial={{ opacity: 0 }}
@@ -69,35 +80,46 @@ const OurBestDesign = () => {
                 transition={{ opacity: { duration: 0.5 } }}
               >
                 <div className="text-center text-white">
-                  <motion.h3 
+                  {/* Title Animation */}
+                  <motion.h3
                     className="text-3xl font-semibold mb-2"
-                    initial={{ y: 50, opacity: 0 }}
-                    whileHover={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5 }}
+                    initial={{ y: 30, opacity: 0 }}
+                    whileHover={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.1 }}
+                    exit={{ opacity: 0, y: 30 }}
                   >
                     Luxurious Sofa
                   </motion.h3>
-                  <motion.p 
+
+                  {/* Description Animation */}
+                  <motion.p
                     className="text-lg mb-4"
-                    initial={{ y: 50, opacity: 0 }}
-                    whileHover={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.1 }}
+                    initial={{ y: 30, opacity: 0 }}
+                    whileHover={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    exit={{ opacity: 0, y: 30 }}
                   >
                     Luxurious sofa with plush cushions for ultimate comfort.
                   </motion.p>
-                  <motion.p 
+
+                  {/* Price Animation */}
+                  <motion.p
                     className="text-xl font-semibold mb-4"
-                    initial={{ y: 50, opacity: 0 }}
-                    whileHover={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
+                    initial={{ y: 30, opacity: 0 }}
+                    whileHover={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                    exit={{ opacity: 0, y: 30 }}
                   >
                     $799.99
                   </motion.p>
-                  <motion.button 
+
+                  {/* Button Animation */}
+                  <motion.button
                     className="bg-blue-600 px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                    exit={{ opacity: 0 }}
                   >
                     Add to Cart
                   </motion.button>
